@@ -6,7 +6,7 @@ defaults:
 hierarchy:
   - name: "VPC-specific data"      # Used for debugging
     path: "%{::environment}.yaml"  # Path to actual yaml
-  - name: "Common Data"
-    path: "common.yaml"
   - name: "Sensitive Data"
     path: "secrets.yaml"
+  - name: "Common Data"
+    path: "common.yaml"
