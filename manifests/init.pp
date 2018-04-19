@@ -1,4 +1,4 @@
-notify { "Hello from develop": } 
+notify { "Hello from ${environment}": } 
 
 $message = hiera("message")
 $message_specific = hiera("message_specific")
