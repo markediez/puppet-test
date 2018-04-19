@@ -1,1 +1,1 @@
-notify: { "Hello from master environment": }
+notify { "Hello from master environment": }
