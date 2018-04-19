@@ -1,0 +1,12 @@
+---
+version: 5
+defaults:
+  datadir: hieradata               # All path's below are relative to this dir
+  data_hash: yaml_data
+hierarchy:
+  - name: "VPC-specific data"      # Used for debugging
+    path: "%{::environment}.yaml"  # Path to actual yaml
+  - name: "Common Data"
+    path: "common.yaml"
+  - name: "Sensitive Data"
+    path: "secrets.yaml"
